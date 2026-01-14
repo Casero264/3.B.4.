@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/d40872fe0d.js" crossorigin="anonymous"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -47,6 +48,29 @@
         #contenedor-quienes-somos {
             display: flex;
         }
+        #nuestros-servicios {
+            background-color: white;
+        }
+        .servicio {
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 2em;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .servicio:hover {
+            opacity: 0.5;
+        }
+        .titulo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+        }
+
         #contenedor-quienes-somos img {
             width: 45%;
         }
@@ -55,6 +79,14 @@
         }
         /* Para tablets */
         @media (min-width:768px) {
+            #contenedor-nuestros-servicios {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .servicio {
+                width: 45%;
+            }
             body {
                 background-color: lightgreen;
             }
@@ -80,6 +112,10 @@
                 background-image: url("images/Taller.jpeg");
                 background-position: center center;
             }
+             .servicio {
+                width: 30%;
+                font-size: 2em;
+            }
         }
 
     </style>
@@ -102,6 +138,39 @@
             <p>Somos una empresa jóven y dinámica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, repudiandae veniam! Iusto quisquam sunt, reiciendis animi et est voluptas adipisci rem. Fugit tempora libero modi officia saepe repellat quo maiores.</p>
 
         </div>
+    </section>
+    <section id="nuestros-servicios">
+        <h1 class="titulo">
+            Nuestros servicios
+        </h1>
+        <div id="contenedor-nuestros-servicios">
+            <div class="servicio">
+            <i class="fa-solid fa-wrench"></i>
+            <p>Servicio técnico</p>
+        </div>
+        <div class="servicio">
+            <i class="fa-solid fa-phone"></i>
+            <p>Atención telefonica</p>
+        </div>
+           <div class="servicio">
+            <i class="fa-solid fa-truck"></i>
+            <p>Servicio a domicilio</p>
+        </div>
+           <div class="servicio">
+            <i class="fa-solid fa-car"></i>
+            <p>Vehículo de sustituición</p>
+        </div>
+           <div class="servicio">
+            <i class="fa-solid fa-info"></i>
+            <p>Información</p>
+        </div>
+           <div id="contenedor-nuestros-servicios">
+            <div class="servicio">
+            <i class="fa-solid fa-wrench"></i>
+            <p>Servicio técnico</p>
+        </div>
+        </div>
+        
     </section>
     <h1>Media Queries</h1>
 </body>
